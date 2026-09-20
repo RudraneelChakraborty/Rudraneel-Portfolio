@@ -208,7 +208,7 @@ public/architectures/compliance.png
 4. Rename the file, for example `mcp.png`.
 5. Copy it into `public/architectures/`.
 
-If no image exists, the website shows a temporary generated diagram so the project viewer still works.
+If no image exists, the interactive architecture flow remains available and no empty image tab is shown.
 
 ## How to edit project cards
 
@@ -433,3 +433,14 @@ When finished:
 ```text
 Ctrl + C
 ```
+
+### Optional project-diagram images
+
+The interactive architecture flow is always available. The **Diagram image** tab appears automatically only when an image for that specific project exists, so visitors never see an empty image placeholder.
+
+1. Create `public/architectures/` if it does not already exist.
+2. Export only a sanitized PNG, JPG, JPEG, or WEBP diagram: do not include employer/client names, internal systems, repositories, account IDs, URLs, credentials, or confidential metrics.
+3. Name the file using the project slug, for example `public/architectures/compliance.png` or `public/architectures/mcp.jpg`.
+4. Refresh the page. The matching project modal will then show the Diagram image tab.
+
+Supported project slugs: `compliance`, `mcp`, `healing`, `adk`, `audit`, `leak`, `vision`, and `maintenance`.

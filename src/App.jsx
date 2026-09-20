@@ -9,12 +9,12 @@ const systemsData = [
   {
     slug: 'compliance',
     number: '01',
-    title: 'EA Governance AgentCore Architecture',
+    title: 'Governance AgentCore Architecture',
     category: 'ENTERPRISE AGENTIC GOVERNANCE',
     type: 'agentic',
-    description: 'Physical multi-agent architecture (Supervisor + Sub-Agents, AgentCore Memory, Kong Gateway, Amazon Bedrock, MCP Server) governing SDD & ADR enterprise compliance.',
+    description: 'Physical multi-agent architecture (Supervisor + Sub-Agents, AgentCore Memory, Kong Gateway, Amazon Bedrock, MCP Server) governing Enterprise Documents compliance.',
     badge: 'AgentCore · A2A · AWS Bedrock',
-    company: 'EY Global Delivery Services / TIAA'
+    company: 'EY Global Delivery Services'
   },
   {
     slug: 'mcp',
@@ -595,7 +595,7 @@ function App() {
               <a href="mailto:Rudraneel350@gmail.com">Rudraneel350@gmail.com ↗</a>
               <a href="tel:+918013388429">+91 8013388429 ↗</a>
               <a href="https://www.linkedin.com/in/rudraneel-chakraborty/" target="_blank" rel="noreferrer">LinkedIn Profile ↗</a>
-              <a href="https://github.com/rudraneel350" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
+              <a href="https://github.com/Rudraneelchakraborty" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
             </div>
 
             {/* Resume Download Card */}
