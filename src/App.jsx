@@ -79,7 +79,7 @@ const systemsData = [
   {
     slug: 'maintenance',
     number: '08',
-    title: 'Industrial IoT Predictive Maintenance',
+    title: 'Deep Learning for Industrial IoT Predictive Maintenanc',
     category: 'PREDICTIVE MODELLING',
     type: 'predictive',
     description: 'Daily batch classification engine analyzing vibration, temperature, and acoustic IoT sensor telemetry to preempt oil & gas equipment failure.',

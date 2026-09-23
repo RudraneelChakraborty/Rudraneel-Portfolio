@@ -72,14 +72,28 @@ const architectureDiagrams = {
     OCR --> Fields[Extracted fields]
     Labels --> Output[Structured result]
     Fields --> Output` },
-  maintenance: { title: 'Industrial Predictive Maintenance', category: 'PREDICTIVE MODELLING AND IOT', description: 'A generalized telemetry pipeline that identifies equipment risk and routes preventative action.', mermaid: `flowchart LR
-    Sensors[Machine telemetry] --> Gateway[Edge gateway]
-    Gateway --> Store[Secure data store]
-    Store --> Features[Time-series feature pipeline]
-    Features --> Model[Failure-risk model]
-    Model --> Risk{Risk threshold reached?}
-    Risk -->|Yes| Work[Preventative work request]
-    Risk -->|No| Dashboard[Health dashboard]` }
+  maintenance: {
+  title: 'Deep Learning for Industrial IoT Predictive Maintenance',
+  category: 'PREDICTIVE MODELLING AND IoT',
+  description:
+    'An end-to-end predictive maintenance pipeline using multi-source industrial telemetry to identify machinery requiring inspection or service and automatically route maintenance actions.',
+  mermaid: `flowchart LR
+    Sensors[Industrial IoT Telemetry<br/>Temperature • Vibration • Acoustic • Pressure • Operational Data]
+    Sensors --> Store[Google Cloud SQL]
+
+    Store --> Features[Feature Engineering<br/>Data Preparation]
+
+    Features --> Model[TensorFlow ANN<br/>64 → 32 → 16 → 1]
+
+    Model --> Batch[Vertex AI<br/>Scheduled Batch Inference]
+
+    Batch --> Risk{Maintenance<br/>Required?}
+
+    Risk -->|Yes| SysAid[SysAid<br/>Maintenance Ticket]
+    Risk -->|No| Dashboard[Equipment Health<br/>Monitoring]
+
+    SysAid --> Engineer[Maintenance Engineer]`
+  }
 }
 
 function useArchitectureImage(slug) {
